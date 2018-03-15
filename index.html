@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>#TEMPLATE#</title>
+  <!-- BOOTSTRAP 4.0.0 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- CUSTOM STYLESHEET -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <!-- JQUERY 3.1.1 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- CUSTOM JAVASCRIPT -->
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <header class="row">
+      <h1 class="col-12">#APPNAME#</h1>
+    </header>
+
+    <div class="row">
+
+      <div class="col-3">
+        <div class="info-container">
+          <h4 class="padding-bottom">
+            About #APP#
+          </h4>
+          <p class="padding-bottom">
+            created by<br />
+            Johnny Ray Alt
+          </p>
+          <p>
+            Submitted for review #DATE#
+          </p>
+        </div>
+      </div>
+
+      <!-- APP CONTAINER -->
+      <div class="col-9">
+
+        <div class="container">
+      <h1>Address book</h1>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class="form-group">
+                  <label for="new-street">Street</label>
+                  <input type="text" class="form-control new-street">
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control new-city">
+                </div>
+                <div class="form-group">
+                  <label for="new-state">State</label>
+                  <input type="text" class="form-control new-state">
+                </div>
+              </div>
+            </div>
+
+            <span class="btn btn-primary" id="add-address">Another address</span>
+
+            <button type="submit" class="btn-info">Add</button>
+          </form>
+
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
